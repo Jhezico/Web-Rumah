@@ -4,12 +4,17 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta http-equiv="X-UA_Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS -->
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/lightslider.css">
+  <!-- JavaScript -->
+  <script src="assets/js/jQuery.min.js"></script>
+  <script src="assets/js/lightslider.js"></script>
   <!-- FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -431,56 +436,67 @@
       <div class="container position-relative mt-5">
         <div class="row">
           <div class="col-12 d-flex justify-content-start">
-            <div class="card-fitur me-3 position-relative">
-              <img src="assets/gambar/Fitur Rumah 1.png" alt="">
-              <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
-                <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
-                  <h5>Kamar Tidur</h5>
-                  <span>Rumah minimalis Type-A2</span>
-                  <h6>IDR.250jt</h6>
-                  <button>Lihat Rumah</button>
+
+            <ul id="autoWidth" class="cs-hidden">
+              <li class="item-a">
+                <div class="card-fitur me-3 position-relative">
+                  <img src="assets/gambar/Fitur Rumah 1.png" alt="">
+                  <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
+                    <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
+                      <h5>Kamar Tidur</h5>
+                      <span>Rumah minimalis Type-A2</span>
+                      <h6>IDR.250jt</h6>
+                      <button>Lihat Rumah</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="card-fitur me-3 position-relative">
-              <img src="assets/gambar/Fitur Rumah 2.png" alt="">
-              <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
-                <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
-                  <h5>Kamar Tidur</h5>
-                  <span>Rumah minimalis Type-A2</span>
-                  <h6>IDR.250jt</h6>
-                  <button>Lihat Rumah</button>
+              </li>
+              <li class="item-b">
+                <div class="card-fitur me-3 position-relative">
+                  <img src="assets/gambar/Fitur Rumah 2.png" alt="">
+                  <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
+                    <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
+                      <h5>Kamar Tidur</h5>
+                      <span>Rumah minimalis Type-A2</span>
+                      <h6>IDR.250jt</h6>
+                      <button>Lihat Rumah</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="card-fitur me-3 position-relative">
-              <img src="assets/gambar/Fitur Rumah 3.png" alt="">
-              <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
-                <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
-                  <h5>Kamar Tidur</h5>
-                  <span>Rumah minimalis Type-A2</span>
-                  <h6>IDR.250jt</h6>
-                  <button>Lihat Rumah</button>
+              </li>
+              <li class="item-c">
+                <div class="card-fitur me-3 position-relative">
+                  <img src="assets/gambar/Fitur Rumah 3.png" alt="">
+                  <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
+                    <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
+                      <h5>Kamar Tidur</h5>
+                      <span>Rumah minimalis Type-A2</span>
+                      <h6>IDR.250jt</h6>
+                      <button>Lihat Rumah</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="card-fitur me-3 position-relative">
-              <img src="assets/gambar/Fitur Rumah 4.png" alt="">
-              <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
-                <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
-                  <h5>Kamar Tidur</h5>
-                  <span>Rumah minimalis Type-A2</span>
-                  <h6>IDR.250jt</h6>
-                  <button>Lihat Rumah</button>
+              </li>
+              <li class="item-d">
+                <div class="card-fitur me-3 position-relative">
+                  <img src="assets/gambar/Fitur Rumah 1.png" alt="">
+                  <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
+                    <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
+                      <h5>Kamar Tidur</h5>
+                      <span>Rumah minimalis Type-A2</span>
+                      <h6>IDR.250jt</h6>
+                      <button>Lihat Rumah</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
         <button class="button-arrow-left position-absolute start-0 top-50 translate-middle-y">
           <img src="assets/gambar/Left Arrow lg.png" alt="" class="w-100 h-100">
         </button>
-        <button class="button-arrow-right position-absolute end-0 top-50 translate-middle-y">
+        <button class=" button-arrow-right position-absolute end-0 top-50 translate-middle-y">
           <img src="assets/gambar/Right Arrow lg.png" alt="" class="w-100 h-100">
         </button>
       </div>
@@ -489,7 +505,7 @@
   <!-- Fitur Section End -->
 
   <!-- Section Contact Start -->
-  <section id="contact">
+  <section id=" contact">
     <div class="container-fluid overlay h-100">
       <div class="container">
         <div class="row">
@@ -530,7 +546,8 @@
                 <h2>Ada Pertanyaan..?</h2>
                 <div class="form-floating mb-3">
                   <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput" class="d-flex align-items-center">Masukkan email anda disini..</label>
+                  <label for="floatingInput" class="d-flex align-items-center">Masukkan email anda
+                    disini..</label>
                 </div>
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -576,7 +593,6 @@
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/script.js"></script>
-  <script src="assets/js/jQuery.min.js"></script>
 </body>
 
 </html>
